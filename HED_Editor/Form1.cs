@@ -10,7 +10,7 @@ namespace HED_Editor
         public Form1()
         {
             InitializeComponent();
-            // Optimalizace pro gridview
+            // Optimalizace výkonu pro gridview
             typeof(DataGridView).GetProperty("DoubleBuffered", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).SetValue(dgvData, true, null);
         }
         private void load_data() // Nahrát data
