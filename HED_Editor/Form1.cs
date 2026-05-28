@@ -182,7 +182,7 @@ namespace HED_Editor
         }
         private void btnVybratSoubor_Click(object sender, EventArgs e) // button - otevřít, pro vybrání cesty ke složce
         {
-            // Otevřít dialog pro výběr složky
+            // Otevřít dialog pro výběr složky.
             FolderBrowserDialog dialog = new FolderBrowserDialog();
             dialog.Description = "Vyberte složku s CSV soubory";
             dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
